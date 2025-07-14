@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Trezub Bueno | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" data-lang-key="nav_name">Felipe Trezub Bueno</a>
+            <div class="nav-menu">
+                <a href="#about" data-lang-key="nav_about">About</a>
+                <a href="#skills" data-lang-key="nav_skills">Skills</a>
+                <a href="#projects" data-lang-key="nav_projects">Projects</a>
+                <a href="#contact" data-lang-key="nav_contact">Contact</a>
+                <div class="controls">
+                    <img src="https://flagcdn.com/us.svg" alt="USA Flag" class="flag-icon" id="lang-en">
+                    <img src="https://flagcdn.com/br.svg" alt="Brazil Flag" class="flag-icon" id="lang-pt">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-switch-checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1 data-lang-key="hero_name">Felipe Trezub Bueno</h1>
+            <p class="hero-subtitle" data-lang-key="hero_subtitle">Computer Science student dedicated to improving his skills in software development and Artificial Intelligence</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 data-lang-key="about_title">About Me</h2>
+            <div class="about-content">
+                <p data-lang-key="about_p1">Felipe is a 3rd-semester Computer Science student at PUCPR, Brazil.</p>
+                <p data-lang-key="about_p2">He has strong logic and programming skills.</p>
+                <p data-lang-key="about_p3">Experienced with Python, Flask, SQLAlchemy, MySQL, HTML, CSS, and JavaScript.</p>
+                <p data-lang-key="about_p4">Works with microcontrollers (ESP32) and sensor integration.</p>
+                <p data-lang-key="about_p5">He is beginning his journey with Artificial Intelligence and aims to work professionally in this field in the future.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2 data-lang-key="skills_title">Skills</h2>
+            <div class="skills-tabs">
+                <button class="tab-button active" data-tab="backend" data-lang-key="skills_tab_backend">Back-end</button>
+                <button class="tab-button" data-tab="frontend" data-lang-key="skills_tab_frontend">Front-end</button>
+                <button class="tab-button" data-tab="database" data-lang-key="skills_tab_database">Database</button>
+                <button class="tab-button" data-tab="other" data-lang-key="skills_tab_other">Other Skills</button>
+            </div>
+            <div class="skills-content">
+                <div class="skill-group active" id="backend">
+                    <span>Python</span><span>Flask</span><span>Node.js (basic)</span><span>MySQL</span><span>SQLAlchemy</span>
+                </div>
+                <div class="skill-group" id="frontend">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span data-lang-key="skills_item_form">Form validation with JS and PHP</span>
+                </div>
+                <div class="skill-group" id="database">
+                    <span>MySQL</span><span>SQLAlchemy ORM</span>
+                </div>
+                <div class="skill-group" id="other">
+                    <span data-lang-key="skills_item_design">Design</span><span data-lang-key="skills_item_editing">Photo and video editing</span><span data-lang-key="skills_item_gaming">Gaming</span><span data-lang-key="skills_item_sports">Sports</span><span data-lang-key="skills_item_hardware">PC hardware assembly and maintenance</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2 data-lang-key="projects_title">Projects</h2>
+            <div class="project-grid">
+                <a href="https://dr-pet-2.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Dr. Pet</h3>
+                            <p data-lang-key="project_drpet_desc">A Flask web application for managing veterinary clinics, featuring appointment scheduling and image support for pet records.</p>
+                            <div class="project-tags">
+                                <span>Flask</span><span>Python</span><span>SQLAlchemy</span><span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-card placeholder">
+                    <div class="project-info">
+                        <h3 data-lang-key="project_new_title">New Project Coming Soon</h3>
+                        <p data-lang-key="project_new_desc">Another exciting project will be featured here in the near future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2 data-lang-key="contact_title">Contact</h2>
+            <p data-lang-key="contact_text">Feel free to reach out via email or connect with me on social media.</p>
+
+            <div class="show-form-wrapper">
+                <button id="show-form-btn" class="social-button" data-lang-key="contact_email_button">Send an Email</button>
+            </div>
+
+            <div id="form-container">
+                <form action="https://formspree.io/f/xovlaoav" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-lang-key="form_name_label">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-lang-key="form_email_label">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-lang-key="form_message_label">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="social-button" data-lang-key="form_submit_button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/felipe-trezub-565956327/" target="_blank" rel="noopener noreferrer" class="social-button">LinkedIn</a>
+                <a href="https://github.com/FeBuen0" target="_blank" rel="noopener noreferrer" class="social-button">GitHub</a>
+                <a href="https://www.instagram.com/_bueno_felipe/" target="_blank" rel="noopener noreferrer" class="social-button">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-key="footer_text">© 2025 Felipe Trezub Bueno. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
