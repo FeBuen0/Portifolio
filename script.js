@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_name: "Felipe Trezub Bueno",
             hero_subtitle: "Computer Science student dedicated to improving his skills in software development and Artificial Intelligence",
             about_title: "About Me",
-            about_p1: "I am a 3rd-semester Computer Science student at PUCPR, Brazil.",
+            about_p1: "I am a 4th-semester Computer Science student at PUCPR, Brazil.",
             about_p2: "I have strong logic and programming skills.",
             about_p3: "I am experienced with Python, Flask, SQLAlchemy, MySQL, HTML, CSS, and JavaScript.",
             about_p4: "I work with microcontrollers (ESP32) and sensor integration.",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_name: "Felipe Trezub Bueno",
             hero_subtitle: "Estudante de Ciência da Computação focado em aprimorar suas habilidades em desenvolvimento de software e Inteligência Artificial",
             about_title: "Sobre Mim",
-            about_p1: "Sou estudante do 3º semestre de Ciência da Computação na PUCPR, Brasil.",
+            about_p1: "Sou estudante do 4º semestre de Ciência da Computação na PUCPR, Brasil.",
             about_p2: "Possuo fortes habilidades em lógica e programação.",
             about_p3: "Tenho experiência com Python, Flask, SQLAlchemy, MySQL, HTML, CSS e JavaScript.",
             about_p4: "Trabalho com microcontroladores (ESP32) e integração de sensores.",
@@ -176,4 +176,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
 });
